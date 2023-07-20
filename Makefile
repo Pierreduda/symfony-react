@@ -34,3 +34,6 @@ init:
 	make update
 	make ddb
 	make migrate
+
+cs-fixer:
+	tools/php-cs-fixer/vendor/bin/php-cs-fixer fix src
