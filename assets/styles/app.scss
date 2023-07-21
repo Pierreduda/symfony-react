@@ -1,3 +1,8 @@
+@use 'bootstrap';
 @use 'abstracts';
 @use 'components';
-@import '~bootstrap/scss/bootstrap';
+@use 'pages';
+
+body{
+  font-family: "Trebuchet MS", Calibri, serif;
+}

@@ -10,11 +10,6 @@
 
 <div class="example-wrapper">
     <h1 id="page-title">Un projet pour apprendre React</h1>
-{#    <div {{ react_component('Hello', {'fullName': 'Mister'}) }}></div>#}
 {#    <div {{ react_component('Modal') }}></div>#}
 </div>
-    <script>
-       const title = React.createElement('h1', {}, 'Coucou tout le monde');
-       ReactDOM.render(title, document.querySelector('#page-title'));
-    </script>
 {% endblock %}

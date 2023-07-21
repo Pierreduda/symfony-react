@@ -1,4 +1,6 @@
 import { registerReactControllerComponents } from '@symfony/ux-react';
+import React from 'react';
+import ReactDOM from 'react-dom';
 /*
  * Welcome to your app's main JavaScript file!
  *
@@ -8,6 +10,7 @@ import { registerReactControllerComponents } from '@symfony/ux-react';
 
 // IMPORT STYLE
 import './styles/app.scss';
+
 
 // IMPORT BOOTSTRAP
 import 'bootstrap';

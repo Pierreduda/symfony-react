@@ -12,10 +12,10 @@
             {{ encore_entry_script_tags('app') }}
         {% endblock %}
     </head>
-    <header>
-        {{ include('header/_nav.html.twig') }}
-    </header>
     <body>
+        <header>
+            {{ include('header/_nav.html.twig') }}
+        </header>
         {% block body %}{% endblock %}
     </body>
 </html>
