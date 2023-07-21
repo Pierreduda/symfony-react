@@ -1,3 +1,4 @@
+import { registerReactControllerComponents } from '@symfony/ux-react';
 /*
  * Welcome to your app's main JavaScript file!
  *
@@ -15,3 +16,5 @@ bsCustomFileInput.init();
 
 // IMPORT STIMULUS
 import './bootstrap.js';
+
+registerReactControllerComponents(require.context('./react/controllers', true, /\.(j|t)sx?$/));
