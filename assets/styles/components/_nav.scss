@@ -1,0 +1,20 @@
+@use '../abstracts' as a;
+
+nav {
+  background-color: a.$color-primary;
+  color: a.$color-white;
+  font-size: 18px;
+  padding: 1rem;
+
+  .nav-container {
+    display: flex;
+
+    .nav-item {
+      margin-right: 0.7rem;
+      display: flex;
+
+      .nav-link {
+      }
+    }
+  }
+}

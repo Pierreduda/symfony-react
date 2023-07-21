@@ -9,14 +9,12 @@
 </style>
 
 <div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
-
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ '/var/www/symfony/src/Controller/ReactController.php'|file_link(0) }}">src/Controller/ReactController.php</a></code></li>
-        <li>Your template at <code><a href="{{ '/var/www/symfony/templates/react/index.html.twig'|file_link(0) }}">templates/react/index.html.twig</a></code></li>
-    </ul>
-    <div {{ react_component('Hello', {'fullName': 'Mister'}) }}></div>
-    <div {{ react_component('Modal') }}></div>
+    <h1 id="page-title">Un projet pour apprendre React</h1>
+{#    <div {{ react_component('Hello', {'fullName': 'Mister'}) }}></div>#}
+{#    <div {{ react_component('Modal') }}></div>#}
 </div>
+    <script>
+       const title = React.createElement('h1', {}, 'Coucou tout le monde');
+       ReactDOM.render(title, document.querySelector('#page-title'));
+    </script>
 {% endblock %}
